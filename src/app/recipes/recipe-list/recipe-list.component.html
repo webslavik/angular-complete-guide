@@ -1,15 +1,18 @@
 <div class="recipe-add-btn">
-  <button class="btn"><i class="material-icons">queue</i>New Recipe</button>
+  <button class="btn"><i class="material-icons">queue</i>Add New Recipe</button>
 </div>
 
 <div class="recipe-card-list">
-  <a href="#" class="recipe-card">
+  <a href="#" class="recipe-card"
+     *ngFor='let recipe of recipesList'>
     <div class="recipe-card-header">
       <div class="recipe-card-img">
-        <img src="http://www.seriouseats.com/images/2015/09/20150914-pressure-cooker-recipes-roundup-09.jpg" alt="">
+        <img src='{{recipe.imagePath}}' alt="">
       </div>
-      <h3 class="recipe-card-name">Recipe Name</h3>
+      <h3 class="recipe-card-name">{{ recipe.name }}</h3>
     </div>
-    <p class="recipe-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quae enim consectetur mollitia eum voluptatem, temporibus veritatis, obcaecati dolores excepturi!</p>
+    <p class="recipe-card-description">{{ recipe.description }}</p>
   </a>
 </div>
+
+<app-recipe-item></app-recipe-item>
