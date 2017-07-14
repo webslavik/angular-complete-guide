@@ -3,17 +3,21 @@
 $black: #222222;
 
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: $black;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
+// h1,
+// h2,
+// h3,
+// p {
+//   margin: 0;
+// }
 
 ul {
   list-style: none;
@@ -26,7 +30,18 @@ a {
   text-decoration: none;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e6ebf1;
+  margin: 1em 0;
+  padding: 0; 
+}
 
+
+// Grid
+//---------------------------
 .container {
   max-width: 1024px;
   width: 100%;
