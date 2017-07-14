@@ -9,15 +9,16 @@ $black: #222222;
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   color: $black;
 }
 
-// h1,
-// h2,
-// h3,
-// p {
-//   margin: 0;
-// }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 
 ul {
   list-style: none;
@@ -28,6 +29,10 @@ ul {
 a {
   color: $black;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 hr {
@@ -43,8 +48,38 @@ hr {
 // Grid
 //---------------------------
 .container {
-  max-width: 1024px;
+  max-width: 1200px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+// Buttons
+//---------------------------
+.btn {
+  // background-color: tomato;
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  margin: 0 4px;
+  padding: 8px;
+  background: transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+  // font-weight: 500; // doesn't work
+  font-weight: 700;
+  outline-width: 0;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+
+  i {
+    display: inline-flex;
+    margin-right: 5px;
+    font-size: 22px;
+  }
 }
