@@ -1,0 +1,21 @@
+.recipe {
+  width: 100%;
+  padding: 24px;
+
+  &-name {
+    margin-bottom: 16px;
+  }
+
+  &-manage {
+    margin-bottom: 16px;
+
+    &-actions {
+      display: none;
+    }
+  }
+
+  &-description {
+    margin-bottom: 16px;
+  }
+   
+}

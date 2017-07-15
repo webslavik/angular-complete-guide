@@ -3,12 +3,10 @@
 </div>
 
 <div class="recipe-card-list">
-  <a href="#" class="recipe-card"
+  <a href="#" class="recipe-card card"
      *ngFor='let recipe of recipesList'>
     <div class="recipe-card-header">
-      <div class="recipe-card-img">
-        <img src='{{recipe.imagePath}}' alt="">
-      </div>
+      <img src='{{recipe.imagePath}}' alt="{{ recipe.name }}">
       <h3 class="recipe-card-name">{{ recipe.name }}</h3>
     </div>
     <p class="recipe-card-description">{{ recipe.description }}</p>
