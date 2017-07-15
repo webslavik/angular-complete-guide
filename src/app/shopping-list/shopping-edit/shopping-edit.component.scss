@@ -1,0 +1,12 @@
+.edit-form {
+  margin-bottom: 24px;
+
+  &-inputs {
+    display: flex;
+    margin-bottom: 16px;
+
+    .input:first-child {
+      margin-right: 32px;
+    }
+  }
+}
