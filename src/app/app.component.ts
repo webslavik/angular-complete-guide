@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  
+  toggleNav: string = 'recipe';
+
+  onNavigation(feature: string) {
+    this.toggleNav = feature;
+  }
+
 }

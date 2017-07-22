@@ -1,13 +1,11 @@
 <div class="page-wrap">
-  <app-header></app-header>
+  <app-header (navigation)='onNavigation($event)'></app-header>
 
   <div class="container">
     <div class="row">
-      <app-recipes></app-recipes>
-
+      <app-recipes *ngIf='toggleNav === "recipe"'></app-recipes>
       <hr>
-      
-      <app-shopping-list></app-shopping-list>
+      <app-shopping-list *ngIf='toggleNav !== "recipe"'></app-shopping-list>
     </div>
   </div>
 </div>
