@@ -1,6 +1,8 @@
-<div class="recipe card">
-  <h2 class="recipe-name">Recipe name</h2>
-  <img src="" alt="" class="recipe-image">
+<div 
+  class="recipe card"
+  *ngIf='recipe'>
+  <h2 class="recipe-name">{{ recipe.name }}</h2>
+  <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="recipe-image">
   <div class="recipe-manage">
     <button class="recipe-manage-button btn">Manage Recipe <i class="material-icons">keyboard_arrow_down</i></button>
     <ul class="recipe-manage-actions card">
@@ -15,6 +17,10 @@
       </li>
     </ul>
   </div>
-  <p class="recipe-description">Description</p>
+  <p class="recipe-description">{{ recipe.description }}</p>
   <div class="recipe-ingredients">Ingredients</div>
+</div>
+
+<div *ngIf='!recipe'>
+  <h3>Selected Recipe</h3>
 </div>

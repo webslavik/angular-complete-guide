@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { Recipe } from '../recipe.model';
 
@@ -9,6 +9,8 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
 
+  @Output('recipeDetail') recipeDetail = new EventEmitter<Recipe>();
+
   recipesList: Recipe[] = [
     new Recipe('Checken with corn', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', 'http://del.h-cdn.co/assets/15/35/980x980/gallery-1440437599-country-crock-grilled-barbecue-chicken-delish.jpg'),
     new Recipe('Awesome pizza', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quae enim consectetur mollitia eum voluptatem, temporibus veritatis, obcaecati dolores excepturi!', 'https://sopka-restaurant.com/upload/iblock/5e7/5e769f8ffb624846b6b02e85691ad2c7.jpg'),
@@ -18,6 +20,11 @@ export class RecipeListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onRecipeDetail(recipe: Recipe) {
+    // console.log(recipe);
+    this.recipeDetail.emit(recipe);
   }
 
 }
