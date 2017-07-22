@@ -2,20 +2,29 @@
   <div class="edit-form">
     <div class="edit-form-inputs">
       <div class="input">
-        <input type="text" required>
+        <input 
+          type="text" 
+          required
+          #nameInput>
         <div class="bar"></div>
         <label>Name</label>
       </div>
       <div class="input input--num">
-        <input type="text" required>
+        <input 
+          type="text" 
+          required
+          #amountInput>
         <div class="bar"></div>
         <label>Amount</label>
       </div>
     </div>
     <div class="edit-form-buttons">
-      <button class="btn" type='submit'><i class="material-icons">add_circle_outline</i>Add</button>
-      <button class="btn"><i class="material-icons">remove_circle_outline</i>Remove</button>
-      <button class="btn"><i class="material-icons">clear</i>Clear</button>
+      <button class="btn" type='submit' (click)='onAdd($event)'>
+        <i class="material-icons">add_circle_outline</i>
+        Add
+      </button>
+      <button type='button' class="btn"><i class="material-icons">remove_circle_outline</i>Remove</button>
+      <button type='button' class="btn"><i class="material-icons">clear</i>Clear</button>
     </div>
   </div>
 </form>
