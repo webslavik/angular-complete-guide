@@ -3,7 +3,7 @@
   *ngIf='recipe'>
   <h2 class="recipe-name">{{ recipe.name }}</h2>
   <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="recipe-image">
-  <div class="recipe-manage dropdown">
+  <div class="recipe-manage dropdown" appDropdown>
     <button class="recipe-manage-button btn">Manage Recipe <i class="material-icons">keyboard_arrow_down</i></button>
     <ul class="dropdown-menu">
       <li>
