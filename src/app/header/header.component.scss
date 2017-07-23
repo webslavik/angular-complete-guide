@@ -13,6 +13,10 @@
     display: flex;
     align-items: center;
   }
+
+  &-dropdown {
+    font-size: 20px;
+  }
 }
 
 .logo {
@@ -30,16 +34,5 @@
 
   a {
     color: #fff;
-  }
-}
-
-.dropdown {
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-
-  .material-icons {
-    position: relative;
-    top: 2px;
   }
 }
