@@ -3,9 +3,9 @@
 
   <div class="container">
     <div class="row">
-      <app-recipes *ngIf='toggleNav !== "recipe"'></app-recipes>
+      <app-recipes *ngIf='toggleNav === "recipe"'></app-recipes>
       <hr>
-      <app-shopping-list *ngIf='toggleNav == "recipe"'></app-shopping-list>
+      <app-shopping-list *ngIf='toggleNav !== "recipe"'></app-shopping-list>
     </div>
   </div>
 </div>
