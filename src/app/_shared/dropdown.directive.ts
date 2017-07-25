@@ -11,8 +11,8 @@ export class DropdawnDirective {
     this.toggle = !this.toggle;
   }
 
-  @HostListener('mouseleave') closeDropdown() {
-    this.toggle = !this.toggle;
-  }
+  // @HostListener('mouseleave') closeDropdown() {
+  //   this.toggle = !this.toggle;
+  // }
 
 }

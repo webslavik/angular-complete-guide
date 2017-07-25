@@ -28,8 +28,6 @@ export class ShoppingEditComponent implements OnInit {
       amount: this.amountRef.nativeElement.value
     })
 
-    // console.log(this.nameRef.nativeElement.value, this.amountRef.nativeElement.value);
-
     this.nameRef.nativeElement.value = '';
     this.amountRef.nativeElement.value = '';
   }
